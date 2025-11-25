@@ -71,8 +71,7 @@ class Ship(GameObject):
         self.thrusting = False
         self.invulnerable = 0
         img_size = self.image_loader.get_ship_size(self.skin_index)
-        # СИЛЬНО УМЕНЬШЕН ХИТБОКС КОРАБЛЯ
-        self.radius = min(img_size) // 5  # Было // 3, теперь // 5
+        self.radius = min(img_size) // 5
 
     def rotate(self, direction):
         self.rotation -= direction * SHIP_ROTATION_SPEED
