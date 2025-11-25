@@ -48,7 +48,7 @@ class ImageLoader:
         self.create_missing_images()
 
     def create_missing_images(self):
-        """Создание качественных изображений вместо заглушек"""
+        """Обработка заглушек"""
         # Фон если нету
         if not any(bg in self.images for bg in BACKGROUND_SKINS):
             surf = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
