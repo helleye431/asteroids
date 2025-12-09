@@ -65,7 +65,7 @@ class AsteroidsGame:
                     if stats_rect.collidepoint(mouse_pos):
                         self.game_state = "STATS"
 
-                    # Выбор корабля (центрированно)
+                    # Выбор корабля
                     preview_width = 60 * 4 + 20 * 3  # 4 превью по 60px с отступами 20px
                     start_x = SCREEN_WIDTH // 2 - preview_width // 2
                     for i in range(min(4, len(SHIP_SKINS))):
@@ -73,13 +73,13 @@ class AsteroidsGame:
                         if rect.collidepoint(mouse_pos):
                             self.selected_ship = i
 
-                    # Выбор астероида (центрированно)
+                    # Выбор астероида
                     for i in range(min(4, len(ASTEROID_SKINS))):
                         rect = pygame.Rect(start_x + i * 80, 250, 60, 60)
                         if rect.collidepoint(mouse_pos):
                             self.selected_asteroid = i
 
-                    # Выбор фона (центрированно)
+                    # Выбор фона
                     for i in range(min(4, len(BACKGROUND_SKINS))):
                         rect = pygame.Rect(start_x + i * 80, 350, 60, 30)
                         if rect.collidepoint(mouse_pos):
