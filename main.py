@@ -246,7 +246,7 @@ class AsteroidsGame:
         # Рекорд
         draw_text(self.screen, f"РЕКОРД: {self.high_score}", 24, SCREEN_WIDTH // 2, 100, YELLOW)
 
-        # Выбор корабля (центрированно)
+        # Выбор корабля
         draw_text(self.screen, "ВЫБЕРИТЕ КОРАБЛЬ", 28, SCREEN_WIDTH // 2, 130)
 
         # Расчет позиций для центрирования превью
@@ -265,7 +265,7 @@ class AsteroidsGame:
 
             draw_text(self.screen, str(i + 1), 20, start_x + i * 80 + 30, 215)
 
-        # Выбор астероида (центрированно)
+        # Выбор астероида
         draw_text(self.screen, "ВЫБЕРИТЕ АСТЕРОИД", 28, SCREEN_WIDTH // 2, 230)
 
         for i in range(min(4, len(ASTEROID_SKINS))):
@@ -280,7 +280,7 @@ class AsteroidsGame:
 
             draw_text(self.screen, str(i + 1), 20, start_x + i * 80 + 30, 315)
 
-        # Выбор фона (центрированно)
+        # Выбор фона
         draw_text(self.screen, "ВЫБЕРИТЕ ФОН", 28, SCREEN_WIDTH // 2, 330)
 
         for i in range(min(4, len(BACKGROUND_SKINS))):
